@@ -3,9 +3,9 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 class m_data extends CI_Model{
 
-	function tampil_data()
+	function tampil_data($table)
 	{
-		return $this->db->get('user');
+		return $this->db->get($table);
 	}
 
 	function tampil_data_id($where,$table)

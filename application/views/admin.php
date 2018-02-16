@@ -13,49 +13,11 @@
         <li class="active">Dashboard</li>
       </ol>
     </section>
-    <button type="button" class="btn btn-block btn-primary">
-    <?php echo anchor('admin/form/','Add');?>
-    </button>
 
-    <!--Main content -->
-      <div class="col-xs-12">
-        <div class="box">
-          <div class="box-body table-responsive no-padding">
-            <table class="table table-hover">
-              <tr>
-                <th>No</th>
-                <th>Username</th>
-                <th>Password</th>
-                <th>Full Name</th>
-                <th>Level</th>
-                <th>Aksi</th>
-              </tr>
-              <?php 
-                $no = 1;
-                foreach($user as $u) {
-              ?>
-              <tr>
-                <td><?php echo $no++ ?></td>
-                <td><?php echo $u->username ?></td>
-                <td><?php echo $u->password ?></td>
-                <td><?php echo $u->fullname ?></td>
-                <td><?php echo $u->level ?></td>
-                <td>
-                <button type="button" class="btn btn-warning btn-sm">
-                  <?php echo anchor('admin/form_edit/'.$u->id,'Edit');?>
-                </button>
-                <button type="button" class="btn btn-danger btn-sm">
-                  <?php echo anchor('crud/delete/'.$u->id,'Hapus');?>
-                </button>
-                </tr>
+    <!-- Main Content -->
 
-                <?php
-                  }
-                ?>
-              </table>
-            </div>
-          </div>
-        </div>
-      </div>
+    
+    
+  </div>
   <!-- /.content-wrapper -->
   <?php require_once 'v_footeradmin.php' ?>

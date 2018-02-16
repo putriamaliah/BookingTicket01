@@ -27,14 +27,20 @@ class Admin extends CI_Controller {
 	 */
 	public function index()
 	{
-		$data['user'] = $this->m_data->tampil_data()->result();
-		$this->load->view('admin',$data);
+		$this->load->view('admin');
 	}
 
 	//public function login()
 	//{
 	//	redirect('admin');
 	//}
+
+	/////USER////
+	public function user()
+	{
+		$data['user'] = $this->m_data->tampil_data("user")->result();
+		$this->load->view('user',$data);
+	}
 
 	public function form()
 	{
@@ -43,9 +49,83 @@ class Admin extends CI_Controller {
 	}
 
 
-	public function form_edit()
+	public function form_edit($id)
 	{
-		$data['user'] = $this->m_data->tampil_data()->result();
+		$where = array('id' => $id);
+		$data['user'] = $this->m_data->tampil_data($where,'user')->result();
 		$this->load->view('form',$data);
+	}
+
+	/////// CUSTOMER ///////
+
+	public function customer()
+	{
+		$data['customer'] = $this->m_data->tampil_data('customer')->result();
+		$this->load->view('customer',$data);
+	}
+
+	//////TRANSPORTATION//////
+
+	public function transportation()
+	{
+		$data['transportation'] = $this->m_data->tampil_data('transportation')->result();
+		$this->load->view('transportation',$data);
+	}
+
+	public function form_transportation()
+	{
+		$data['transportation'] = null;
+		$this->load->view('form_transportation',$data);
+	}
+
+	public function form_edit_transportation($id)
+	{
+		$where = array('id' => $id);
+		$data['transportation'] = $this->m_data->tampil_data($where,'transportation')->result();
+		$this->load->view('form_transportation',$data);
+	}
+
+	///////// RUTE //////////
+
+	public function rute()
+	{
+		$data['rute'] = $this->m_data->tampil_data('rute')->result();
+		$this->load->view('rute',$data);
+	}
+
+	public function form_rute()
+	{
+		$data['rute'] = null;
+		$this->load->view('form_rute',$data);
+	}
+
+
+	public function form_edit_rute($id)
+	{
+		$where = array('id' => $id);
+		$data['rute'] = $this->m_data->tampil_data($where,'rute')->result();
+		$this->load->view('form_rute',$data);
+	}
+
+	/////// RESERVATION //////
+
+	public function reservation()
+	{
+		$data['reservation'] = $this->m_data->tampil_data('reservation')->result();
+		$this->load->view('reservation',$data);
+	}
+
+	public function form_reservation()
+	{
+		$data['reservation'] = null;
+		$this->load->view('form_reservation',$data);
+	}
+
+
+	public function form_edit_reservation($id)
+	{
+		$where = array('id' => $id);
+		$data['reservation'] = $this->m_data->tampil_data($where,'reservation')->result();
+		$this->load->view('form_reservation',$data);
 	}
 }
