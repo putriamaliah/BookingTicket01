@@ -320,32 +320,31 @@
       <!-- sidebar menu: : style can be found in sidebar.less -->
       <ul class="sidebar-menu">
         <li class="header">MAIN NAVIGATION<  /li>
+                <li class="treeview">
+          <a href="#">
+            <i class="fa fa-dashboard"></i> <span>Dashboard</span>
+          </a>
+        </li>
         <li class="treeview">
           <a href="#">
             <i class="fa fa-dashboard"></i> <span>User</span>
           </a>
         </li>
-        <li class="treeview">
-          <a href="#">
-            <i class="fa fa-files-o"></i>
-            <span>Form</span>
-          </a>
-        </li>
         <li>
           <a href="../widgets.html">
-            <i class="fa fa-th"></i> <span>Widgets</span>
+            <i class="fa fa-th"></i> <span>Customer</span>
           </a>
         </li>
         <li class="treeview">
           <a href="#">
             <i class="fa fa-pie-chart"></i>
-            <span>Charts</span>
+            <span>Transportation</span>
           </a>
         </li>
         <li class="treeview">
           <a href="#">
             <i class="fa fa-laptop"></i>
-            <span>UI Elements</span>
+            <span>Rute</span>
           </a>
         </li>
       </ul>
@@ -394,7 +393,7 @@
               $seat_qty = null;
             }
             ?>
-            <form role="form" action="<?php echo base_url();?>index.php/crud/add" method="post">
+            <form role="form" action="<?php echo base_url();?>index.php/crud/add_transportation" method="post">
               <div class="box-body">
                 <div class="form-group">
                 <input type="hidden" class="form-control" name="id" id="id" aria-describedby="codeHelp" placeholder="Enter Code" value="<?php echo $id?>">
@@ -403,7 +402,7 @@
                 </div>
                 <div class="form-group">
                   <label for="exampleInputPassword">Description</label>
-                  <input type="password" class="form-control" name="description" id="exampleInputDescription" placeholder="Enter Description" value="<?php echo $description?>">
+                  <input type="text" class="form-control" name="description" id="exampleInputDescription" placeholder="Enter Description" value="<?php echo $description?>">
                 </div>
                 <div class="form-group">
                   <label for="exampleInputFullname">Seat_qty</label>

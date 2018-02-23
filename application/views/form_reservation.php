@@ -407,7 +407,7 @@
               $price = null;
             }
             ?>
-            <form role="form" action="<?php echo base_url();?>index.php/crud/add" method="post">
+            <form role="form" action="<?php echo base_url();?>index.php/crud/add_reservation" method="post">
               <div class="box-body">
                 <div class="form-group">
                 <input type="hidden" class="form-control" name="id" id="id" aria-describedby="usernameHelp" placeholder="Enter Id" value="<?php echo $id?>">

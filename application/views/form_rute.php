@@ -347,12 +347,6 @@
             <span>Rute</span>
           </a>
         </li>
-        <li class="treeview">
-          <a href="#">
-            <i class="fa fa-laptop"></i>
-            <span>Reservation</span>
-          </a>
-        </li>
       </ul>
     </section>
     <!-- /.sidebar -->
@@ -401,7 +395,7 @@
               $price = null;
             }
             ?>
-            <form role="form" action="<?php echo base_url();?>index.php/crud/add" method="post">
+            <form role="form" action="<?php echo base_url();?>index.php/crud/add_rute" method="post">
               <div class="box-body">
                 <div class="form-group">
                 <input type="hidden" class="form-control" name="id" id="id" aria-describedby="usernameHelp" placeholder="Enter Id" value="<?php echo $id?>">

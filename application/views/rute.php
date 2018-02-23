@@ -45,7 +45,7 @@
                   <?php echo anchor('admin/form_edit_rute/'.$r->id,'Edit');?>
                 </button>
                 <button type="button" class="btn btn-danger btn-sm">
-                  <?php echo anchor('crud/delete/'.$r->id,'Hapus');?>
+                  <?php echo anchor('crud/delete_rute/'.$r->id,'Hapus');?>
                 </button>
                 </tr>
 

@@ -14,7 +14,7 @@
       </ol>
     </section>
     <button type="button" class="btn btn-block btn-primary">
-      <?php echo anchor('admin/form_transportation','Tambah Data');?>
+      <?php echo anchor('admin/form_transportation ','Tambah Data');?>
     </button>
 
     <!-- Main Content -->
@@ -28,6 +28,8 @@
                 <th>Code</th>
                 <th>Description</th>
                 <th>Seat_qty</th>
+                <th></th>
+                <th></th>
               </tr>
               <?php 
                 $no = 1;
@@ -35,17 +37,20 @@
               ?>
               <tr>
                 <td><?php echo $no++ ?></td>
-                <td><?php echo $t->$code ?></td>
-                <td><?php echo $t->$description ?></td>
-                <td><?php echo $t->$seat_qty ?></td>
+                <td><?php echo $t->code; ?></td>
+                <td><?php echo $t->description; ?></td>
+                <td><?php echo $t->seat_qty; ?></td>
                 <td>
                  <button type="button" class="btn btn-warning btn-sm">
                   <?php echo anchor('admin/form_edit_transportation/'.$t->id,'Edit');?>
                 </button>
+                </td>
+                <td>
                 <button type="button" class="btn btn-danger btn-sm">
-                  <?php echo anchor('crud/delete/'.$t->id,'Hapus');?>
+                  <?php echo anchor('crud/delete_transportation/'.$t->id,'Hapus');?>
                 </button>
-                </tr>
+                </td>
+              </tr>
 
                 <?php
                   }

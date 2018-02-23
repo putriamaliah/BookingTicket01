@@ -13,9 +13,6 @@
         <li class="active">Customer</li>
       </ol>
     </section>
-    <button type="button" class="btn btn-block btn-primary">
-      <?php echo anchor('admin/form','Tambah Data');?>
-    </button>
 
     <!-- Main Content -->
 

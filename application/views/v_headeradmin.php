@@ -357,13 +357,6 @@
             </span>
           </a>
         </li>
-        <li class="treeview">
-          <a href="<?php echo site_url('admin/reservation');?>">
-            <i class="fa fa-laptop"></i>
-            <span>Reservation</span>
-            </span>
-          </a>
-        </li>
       </ul>
     </section>
     <!-- /.sidebar -->

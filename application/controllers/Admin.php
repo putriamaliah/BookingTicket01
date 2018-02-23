@@ -81,7 +81,7 @@ class Admin extends CI_Controller {
 	public function form_edit_transportation($id)
 	{
 		$where = array('id' => $id);
-		$data['transportation'] = $this->m_data->tampil_data($where,'transportation')->result();
+		$data['transportation'] = $this->m_data->tampil_data_id($where,'transportation')->result();
 		$this->load->view('form_transportation',$data);
 	}
 
@@ -103,7 +103,7 @@ class Admin extends CI_Controller {
 	public function form_edit_rute($id)
 	{
 		$where = array('id' => $id);
-		$data['rute'] = $this->m_data->tampil_data($where,'rute')->result();
+		$data['rute'] = $this->m_data->tampil_data_id($where,'rute')->result();
 		$this->load->view('form_rute',$data);
 	}
 
@@ -125,7 +125,7 @@ class Admin extends CI_Controller {
 	public function form_edit_reservation($id)
 	{
 		$where = array('id' => $id);
-		$data['reservation'] = $this->m_data->tampil_data($where,'reservation')->result();
+		$data['reservation'] = $this->m_data->tampil_data_id($where,'reservation')->result();
 		$this->load->view('form_reservation',$data);
 	}
 }

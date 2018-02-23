@@ -59,18 +59,7 @@
       <div class="pad_1">
         <h2>Rencana Perjalanan</h2>
         <form id="form_1" action="#" method="post">
-          <div class="wrapper pad_bot1">
-            <div class="radio marg_right1">
-              <input type="radio" name="name1">
-              Round Trip<br>
-              <input type="radio" name="name1">
-              One Way </div>
-            <div class="radio">
-              <input type="radio" name="name1">
-              Empty-Leg<br>
-              <input type="radio" name="name1">
-              Multi-Leg </div>
-          </div>
+          
           <div class="wrapper"> Awal:
             <div class="bg">
               <input type="text" class="input input1" value="Kota atau Bandara" onBlur="if(this.value=='') this.value='Enter City or Airport Code'" onFocus="if(this.value =='Enter City or Airport Code' ) this.value=''">
@@ -101,11 +90,22 @@
               </div>
             </div>
           </div>
-          <div class="wrapper">
-            <p>Penumpang:</p>
-            <div class="bg left">
-              <input type="text" class="input input2" value="# penumpang" onBlur="if(this.value=='') this.value='# passengers'" onFocus="if(this.value =='# passengers' ) this.value=''">
+          <div class="wrapper"> Penumpang:
+            <div class="bg">
+              <input type="text" class="input input1" value="penumpang" onBlur="if(this.value=='') this.value='penumpang'" onFocus="if(this.value =='penumpang' ) this.value=''">
             </div>
+          </div>
+          <div class="col-sm-12 mt">
+          <section>
+            <label for="class">Class:</label><br>
+            <select name="flight_class" class="cs-select cs-skin-border">
+              <option value="Economy">Economy</option>
+              <option value="First">First</option>
+              <option value="Bussiness">Bussiness</option>
+            </select>
+          </section>
+          </div>
+          <div class="wrapper">
             <a href="#" class="button2">Pesan!</a> </div>
         </form>
         <h2>Berita Terbaru</h2>
@@ -121,20 +121,6 @@
       <h2>Selamat Datang di My Flight!</h2>
       <p class="color1">My Flight merupakan website pemesanan tiket yang dapat membantu memudahkan Anda dalam melakukan pemesanan tiket pesawat.</p>
       <p class="color1">Dengan My Flight Anda dapat melakukan pemesanan tiket dimanapun dan kapanpun dengan cepat dan tepat.</p>
-      <div class="marker">
-        <div class="wrapper">
-          <p class="pad_bot2"><strong>Aircraft</strong></p>
-          <p class="pad_bot2">Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione.</p>
-        </div>
-      </div>
-      <div class="wrapper pad_bot2"><a href="#" class="button1">Baca Selengkapnya..</a></div>
-      <div class="marker">
-        <div class="wrapper">
-          <p class="pad_bot2"><strong>Charters</strong></p>
-          <p class="pad_bot2">Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p>
-        </div>
-      </div>
-      <div class="wrapper pad_bot2"> <a href="#" class="button1">Reservation</a> <a href="#" class="button2">Fleet</a> </div>
       <div class="wrapper">
         <article class="cols">
           <h2>Our Clients</h2>

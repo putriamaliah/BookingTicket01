@@ -49,7 +49,7 @@ class Crud extends CI_Controller {
 
 	/////transportation///
 
-	public function add()
+	public function add_transportation()
 	{
 		$id = $this->input->post('id');
 		$code = $this->input->post('code');
@@ -77,7 +77,7 @@ class Crud extends CI_Controller {
 		}
 	}
 
-	public function delete($id)
+	public function delete_transportation($id)
 	{
 		$where = array('id' => $id);
 		$this->m_data->hapus_data($where,'transportation');
@@ -86,7 +86,7 @@ class Crud extends CI_Controller {
 
 	////// rute /////
 
-	public function add(){
+	public function add_rute(){
 		$id = $this->input->post('id');
 		$depart_at = $this->input->post('depart_at');
 		$rute_from = $this->input->post('rute_from');
@@ -115,7 +115,7 @@ class Crud extends CI_Controller {
 		}
 	}
 
-	public function delete($id)
+	public function delete_rute($id)
 	{
 		$where = array('id' => $id);
 		$this->m_data->hapus_data($where,'rute');
@@ -124,7 +124,7 @@ class Crud extends CI_Controller {
 
 	/////// reservation ////
 
-	public function add(){
+	public function add_reservation(){
 		$id = $this->input->post('id');
 		$reservation_code = $this->input->post('reservation_code');
 		$reservation_at = $this->input->post('reservation_at');
@@ -159,7 +159,7 @@ class Crud extends CI_Controller {
 		}
 	}
 
-	public function delete($id)
+	public function delete_reservation($id)
 	{
 		$where = array('id' => $id);
 		$this->m_data->hapus_data($where,'reservation');
